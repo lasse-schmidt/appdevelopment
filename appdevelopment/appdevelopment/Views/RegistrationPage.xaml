@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appdevelopment.Views.RegistrationPage"
+             Shell.FlyoutBehavior="Disabled">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Label Text="Fristname:" TextColor="#000" FontAttributes="Bold" FontSize="20" ></Label>
+            <Entry Placeholder="Firstname" TextColor="#000" Margin="0,0,0,10"></Entry>
+
+            <Label Text="Lastname:" TextColor="#000" FontAttributes="Bold" FontSize="20"></Label>
+            <Entry Placeholder="Lastname" TextColor="#000" Margin="0,0,0,10"></Entry>
+
+            <Label Text="Username:" TextColor="#000" FontAttributes="Bold" FontSize="20"></Label>
+            <Entry Placeholder="Username" TextColor="#000" Margin="0,0,0,10"></Entry>
+
+            <Label Text="Email:" TextColor="#000" FontAttributes="Bold" FontSize="20"></Label>
+            <Entry Placeholder="Email" TextColor="#000" Margin="0,0,0,10"></Entry>
+
+            <Label Text="Password:" TextColor="#000" FontAttributes="Bold" FontSize="20"></Label>
+            <Entry IsPassword="True" Placeholder="Password" TextColor="#000" Margin="0,0,0,20"></Entry>
+
+            <Button VerticalOptions="Center" Text="Register" FontAttributes="Bold" FontSize="20" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

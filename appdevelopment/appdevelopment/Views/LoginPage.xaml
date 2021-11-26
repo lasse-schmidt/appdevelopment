@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="appdevelopment.Views.LoginPage"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Label Text="Email/Username:" TextColor="#000" FontAttributes="Bold" FontSize="20" ></Label>
+            <Entry Placeholder="Email/Username" TextColor="#000" Margin="0,0,0,10"></Entry>
+
+            <Label Text="Password:" TextColor="#000" FontAttributes="Bold" FontSize="20"></Label>
+            <Entry IsPassword="True" Placeholder="Password" TextColor="#000" Margin="0,0,0,20"></Entry>
+
+            <Button VerticalOptions="Center" Text="Login" FontAttributes="Bold" FontSize="20" Clicked="Button_Clicked" Margin="0,0,0,10"/>
+
+            <Label Text="Register" HorizontalOptions="Center" TextColor="Blue" FontAttributes="Bold" FontSize="18">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
