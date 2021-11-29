@@ -82,16 +82,12 @@
     <ShellItem Route="LoginPage" FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
     </ShellItem>
-    
-    <FlyoutItem Title="About" Icon="icon_about.png">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-    </FlyoutItem>
 
-    <FlyoutItem Title="GalleryPage" Icon="icon_about.png">
+    <FlyoutItem Title="GalleryPage" Icon="icon_gallery.png">
         <ShellContent Route="GalleryPage" ContentTemplate="{DataTemplate local:GalleryPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Camera" Icon="icon_about.png">
+    <FlyoutItem Title="Camera" Icon="icon_camera.png">
         <ShellContent Route="CamPage" ContentTemplate="{DataTemplate local:CamPage}" />
     </FlyoutItem>
 

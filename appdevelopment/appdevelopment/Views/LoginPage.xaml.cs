@@ -1,5 +1,4 @@
-﻿using appdevelopment.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +19,7 @@ namespace appdevelopment.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+            await Shell.Current.GoToAsync($"//{nameof(GalleryPage)}");
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
