@@ -8,10 +8,12 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Image x:Name="imgCam" Grid.Row="0" Grid.Column="0"/>
         <Entry Placeholder="Enter Picture Desc Here." Grid.Row="1" Grid.Column="0"/>
         <Button x:Name="btnCam" Text="SNAP A PIC" Grid.Row="2" Grid.Column="0" Margin="2" Clicked="BtnCam_Clicked" BackgroundColor="#00a4fc" TextColor="#FFF"/>
+        <Button x:Name="btnSave" Text="Upload Picture" Grid.Row="3" Grid.Column="0" Margin="2" Clicked="BtnSave_Clicked" BackgroundColor="#00a4fc" TextColor="#FFF"/>
     </Grid>
 </ContentPage>
