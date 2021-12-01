@@ -12,5 +12,10 @@ namespace appdevelopment
             InitializeComponent();
             Routing.RegisterRoute(nameof(RegistrationPage), typeof(RegistrationPage));
         }
+
+        private async void MenuItem_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//LoginPage");
+        }
     }
 }

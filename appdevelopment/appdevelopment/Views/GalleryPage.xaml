@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="appdevelopment.Views.GalleryPage">
+             x:Class="appdevelopment.Views.GalleryPage"
+             Title="Gallery">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <FlexLayout Wrap="Wrap">
+                
+                <Frame>
+                    <FlexLayout Direction="Column">
+                        <Image Source="img2.jpg"></Image>
+                        <Label Text="Billedet er taget: 20/02/2021." FontSize="16" Margin="0,2,0,6" TextColor="#777"></Label>
+                        <Label Text="Rigtig fin lille gråspurv der piper lystigt i den mørke skov." TextColor="#000" FontSize="20"></Label>
+                    </FlexLayout>
+                </Frame>
+                
+                <Frame>
+                    <FlexLayout Direction="Column">
+                        <Image Source="img3.jpg"></Image>
+                        <Label Text="Billedet er taget: 10/11/2021." FontSize="16" Margin="0,2,0,6" TextColor="#777"></Label>
+                        <Label Text="Et rigtig flot my tog fotograferet ved varde station." TextColor="#000" FontSize="20"></Label>
+                    </FlexLayout>
+                </Frame>
+            </FlexLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

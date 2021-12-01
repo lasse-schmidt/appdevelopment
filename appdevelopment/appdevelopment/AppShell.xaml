@@ -83,7 +83,7 @@
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
     </ShellItem>
 
-    <FlyoutItem Title="GalleryPage" Icon="icon_gallery.png">
+    <FlyoutItem Title="Gallery" Icon="icon_gallery.png">
         <ShellContent Route="GalleryPage" ContentTemplate="{DataTemplate local:GalleryPage}" />
     </FlyoutItem>
 
@@ -92,12 +92,16 @@
     </FlyoutItem>
 
 
+    <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
+    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="MenuItem_Clicked" IconImageSource='icon_logout.png'>
+    </MenuItem>
+
+
     <!--
         TabBar lets you define content that won't show up in a flyout menu. When this content is active
         the flyout menu won't be available. This is useful for creating areas of the application where 
         you don't want users to be able to navigate away from. If you would like to navigate to this 
         content you can do so by calling 
-        await Shell.Current.GoToAsync("//LoginPage");
     -->
     
 

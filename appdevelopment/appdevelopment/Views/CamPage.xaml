@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="appdevelopment.Views.CamPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="appdevelopment.Views.CamPage"
+             Title="Camera">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image x:Name="imgCam" Grid.Row="0" Grid.Column="0"/>
+        <Entry Placeholder="Enter Picture Desc Here." Grid.Row="1" Grid.Column="0"/>
+        <Button x:Name="btnCam" Text="SNAP A PIC" Grid.Row="2" Grid.Column="0" Margin="2" Clicked="BtnCam_Clicked" BackgroundColor="#00a4fc" TextColor="#FFF"/>
+    </Grid>
 </ContentPage>
