@@ -18,7 +18,6 @@ namespace appdevelopment.Views
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, true);
-            this.Title = "appdevelopment";
         }
 
         private async void BtnCam_Clicked(object sender, EventArgs e)
