@@ -25,7 +25,7 @@ namespace appdevelopment.Views
             
             if (getLoginDetails)
             {
-                await DisplayAlert("Login Successfull", "Okay", "Cancel");
+                await DisplayAlert("Login Successfull", "", "Okay", "Cancel");
                 await Shell.Current.GoToAsync($"//{nameof(GalleryPage)}");
             }
             else if (Email.Text == null)
