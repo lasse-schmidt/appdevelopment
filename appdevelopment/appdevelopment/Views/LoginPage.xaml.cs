@@ -25,7 +25,7 @@ namespace appdevelopment.Views
             
             if (getLoginDetails)
             {
-                await DisplayAlert("Login Successfull", "Username/Email or Password is correct", "Okay", "Cancel");
+                await DisplayAlert("Login Successfull", "Okay", "Cancel");
                 await Shell.Current.GoToAsync($"//{nameof(GalleryPage)}");
             }
             else if (Email.Text == null)
@@ -34,9 +34,8 @@ namespace appdevelopment.Views
             }
             else
             {
-                await DisplayAlert("Login failed", "Username/Email or Password is incorrect or not exists", "Okay", "Cancel");
+                await DisplayAlert("Login failed", "Username/Email or Password is incorrect or does not exists", "Okay", "Cancel");
             }
-            //await Shell.Current.GoToAsync($"//{nameof(GalleryPage)}");
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
